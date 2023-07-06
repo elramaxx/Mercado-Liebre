@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+/* ------------------------------- */
+
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--gris-claro);
+    margin: 0;
+}
+
+p,
+li,
+span {
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+nav {
+    background-color: var(--amarillo);
+    padding: 10px;
+    width: 100vw;
+}
+
+main {
+    margin: auto;
+    width: 90%;
+}
+
+/* ------------------------------- */
+
+.logo {
+    width: 50%;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 5px;
+}
+
+.nav-upper-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-upper-container>div {
+    display: inherit;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-upper-container>span {
+    margin: 15px;
+}
+
+.nav-upper-container>div>form>input {
+    min-width: 0;
+}
+
+.nav-lower-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger-menu {
+    background-color: var(--celeste);
+    color: var(--gris-claro);
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.nav-buttons {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    display: none;
+}
+
+.nav-buttons>li {
+    margin: 8px;
+}
+
+.nav-buttons>li>i {
+    margin-left: 2px;
+}
+
+/* ------------------------------- */
+
+.circle {
+    border: 1px solid var(--verde);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.precio {
+    width: 30%;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.descuento {
+    width: 70%;
+    font-size: 16px;
+    color: var(--verde);
+    text-align: center;
+}
+
+.descripcion {
+    font-size: 16px;
+    width: 100%;
+    color: var(--gris-oscuro);
+    display: none;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.productos>h2 {
+    width: 100%;
+}
+
+.productos>article {
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.productos>article:hover{
+    transition: all 0.1s ease;
+    transform: scale(1.02);
+}
+
+.productos>article>div {
+    border-top: solid 1px var(--gris-claro);
+    padding: 15px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.productos>article>div>i {
+    color: var(--verde);
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.productos>article>p {
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+}
+
+.article-info {
+    display: flex;
+    align-items: center;
+}
+
+
+/* ------------------------------- */
+
+footer {
+    background-color: white;
+    margin-top: 20px;
+}
+
+footer>section {
+    color: var(--gris-oscuro);
+    padding: 20px 20px 1px;
+    /*SI EL ULTIMO PADDING NO ES 1PX NOS SACAN LA COPA DEL MUNDIAL*/
+}
+
+footer>section>article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+footer>section>article>i {
+    color: var(--celeste);
+}
+
+/* ------------------------------- */
+
+/* TABLET */
+@media (min-width:361px) {
+    .productos>article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .descripcion {
+        max-height: 500px;
+        display: block;
+    }
+
+    .nav-buttons {
+        display: flex;
+        margin-bottom: 0;
+        flex-wrap: wrap;
+    }
+
+    #left-buttons {
+        justify-content: flex-start;
+    }
+
+    #right-buttons {
+        justify-content: flex-end;
+    }
+
+    .nav-lower-container {
+        flex-wrap: nowrap;
+    }
+
+    .nav-upper-container>div {
+        display: inherit;
+        align-items: center;
+        width: 50%;
+    }
+
+    .nav-upper-container>span {
+        display: block;
+    }
+
+    .productos>article {
+        width: 49%;
+    }
+
+}
+
+/* DESKTOP */
+@media (min-width:769px) {
+    .productos>article {
+        width: 24%;
+    }
+}
