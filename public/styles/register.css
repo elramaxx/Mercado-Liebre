@@ -1,4 +1,5 @@
 .register-wrapper{
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,29 +34,24 @@
     border-radius: 5px;
 }
 
-.input-group label{
-    white-space: nowrap;
-    margin: 5px 5px;
-    width: 100%;
-}
-
 .input-group label:first-child{
     font-weight: bold;
+    width: 100%;
+    margin: 5px;
 }
 
-.register-wrapper form div button{
+.input-group button{
     margin: 5px auto;
     padding: 7px 0px;
     width: 100%;
     border: 1px var(--celeste) solid;
-    /* background-color: var(--celeste); */
     background: linear-gradient(145deg, #135fd1, #1050b0);
     border-radius: 5px;
     color: white;
     box-shadow: 3px 3px 3px #c8c8c8, -3px -3px 4px #ffffff;
 }
 
-.register-wrapper form div button:last-child{
+.input-group button:last-child{
     margin: 5px auto;
     padding: 7px 0px;
     width: 100%;
@@ -65,15 +61,21 @@
     color: var(--celeste);
 }
 
-.input-group>div{
+.input-double{
     flex: 1;
     margin-right: 10px;
+}
+
+.input-choice{
+    width: 100%;
+    align-items: center;
 }
 
 @media (min-width:361px){
     .register-wrapper form{
         width: 80%;
     }
+
     .register-wrapper form div button{
         width: 60%;
     }
@@ -87,14 +89,15 @@
     .register-wrapper form{
         width: 60%;
     }
+
     .register-wrapper form div button{
         flex: 1;
         margin: 5px;
     }
+    
     .register-wrapper form div button:last-child{
         flex: 1;
         margin: 5px;
-
     }
 }
 

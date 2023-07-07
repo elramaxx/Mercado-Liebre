@@ -45,11 +45,11 @@
         <div class="register-wrapper">
             <form action="/register" method="POST">
                 <div class="input-group">
-                    <div>
+                    <div class="input-double">
                         <label for="nombre">Nombre</label>
                         <input type="text" name="nombre" id="nombre" placeholder="Nombre">
                     </div>
-                    <div>
+                    <div class="input-double">
                         <label for="apellido">Apellido</label>
                         <input type="text" name="apellido" id="apellido" placeholder="Apellido">
                     </div>
@@ -76,16 +76,30 @@
                 </div>
                 <div class="input-group">
                     <label for="profile">Perfil del Usuario</label>
-                    <label for="comprador"><input type="radio" name="profile" id="comprador">Comprador</label>
-                    <label for="vendedor"><input type="radio" name="profile" id="vendedor">Vendedor</label>
+                    <div class="input-choice">
+                        <input type="radio" name="profile" id="comprador"><label for="comprador">Comprador</label>
+                    </div>
+                    <div class="input-choice">
+                        <input type="radio" name="profile" id="vendedor"><label for="vendedor">Vendedor</label>
+                    </div>
                 </div>
                 <div class="input-group">
                     <label for="interests">Categorias de Interes</label>
-                    <label for=""><input type="checkbox" name="interests" id="electro">Electro</label>
-                    <label for=""><input type="checkbox" name="interests" id="moda">Moda</label>
-                    <label for=""><input type="checkbox" name="interests" id="hogar">Hogar</label>
-                    <label for=""><input type="checkbox" name="interests" id="jugueteria">Jugueteria</label>
-                    <label for=""><input type="checkbox" name="interests" id="vida-sana">Vida Sana</label>
+                    <div class="input-choice">
+                        <input type="checkbox" name="interests" id="electro"><label for="">Electro</label>
+                    </div>
+                    <div class="input-choice">
+                        <input type="checkbox" name="interests" id="moda"><label for="">Moda</label>
+                    </div>
+                    <div class="input-choice">
+                        <input type="checkbox" name="interests" id="hogar"><label for="">Hogar</label>
+                    </div>
+                    <div class="input-choice">
+                        <input type="checkbox" name="interests" id="jugueteria"><label for="">Jugueteria</label>
+                    </div>
+                    <div class="input-choice">
+                        <input type="checkbox" name="interests" id="vida-sana"><label for="">Vida Sana</label>
+                    </div>
                 </div>
                 <div class="input-group">
                     <label for="profile-img">Foto de Usuario</label>
