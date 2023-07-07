@@ -12,3 +12,7 @@ process.on('SIGINT', ()=> console.error('Servidor Tropezado y se rompio la clavi
 app.get('/', (req, res) => {
     res.sendFile(path.join(publicPath, '/views/home.html'))
 });
+
+app.get('/register.html', (req, res) => {
+    res.sendFile(path.join(publicPath, '/views/register.html'))
+});

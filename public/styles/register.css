@@ -1,0 +1,100 @@
+.register-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.register-wrapper form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.input-group>input:not([type=checkbox]):not([type=radio]):not([type=file]), .input-group>div>input:not([type=checkbox]):not([type=radio]):not([type=file]){
+    width: 100%;
+    flex: 1;
+    padding: 10px;
+    background-color: var(--gris-claro) ;
+    box-shadow: inset 3px 3px 6px rgb(0 0 0 / 10%), inset -3px -3px 15px #ffffff
+}
+
+.input-group{
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input-group input{
+    margin: 5px;
+    border: 1px solid var(--gris-claro);
+    border-radius: 5px;
+}
+
+.input-group label{
+    white-space: nowrap;
+    margin: 5px 5px;
+    width: 100%;
+}
+
+.input-group label:first-child{
+    font-weight: bold;
+}
+
+.register-wrapper form div button{
+    margin: 5px auto;
+    padding: 7px 0px;
+    width: 100%;
+    border: 1px var(--celeste) solid;
+    /* background-color: var(--celeste); */
+    background: linear-gradient(145deg, #135fd1, #1050b0);
+    border-radius: 5px;
+    color: white;
+    box-shadow: 3px 3px 3px #c8c8c8, -3px -3px 4px #ffffff;
+}
+
+.register-wrapper form div button:last-child{
+    margin: 5px auto;
+    padding: 7px 0px;
+    width: 100%;
+    border: 1px var(--celeste) solid;
+    background: #ebebeb;
+    border-radius: 5px;
+    color: var(--celeste);
+}
+
+.input-group>div{
+    flex: 1;
+    margin-right: 10px;
+}
+
+@media (min-width:361px){
+    .register-wrapper form{
+        width: 80%;
+    }
+    .register-wrapper form div button{
+        width: 60%;
+    }
+    
+    .register-wrapper form div button:last-child{
+        width: 60%;
+    }
+}
+
+@media (min-width:769px){
+    .register-wrapper form{
+        width: 60%;
+    }
+    .register-wrapper form div button{
+        flex: 1;
+        margin: 5px;
+    }
+    .register-wrapper form div button:last-child{
+        flex: 1;
+        margin: 5px;
+
+    }
+}
+
