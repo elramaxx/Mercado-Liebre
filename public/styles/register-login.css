@@ -1,4 +1,6 @@
-.register-wrapper{
+.register-wrapper,
+.login-wrapper
+{
     padding-top: 20px;
     display: flex;
     justify-content: center;
@@ -6,7 +8,9 @@
     width: 100%;
 }
 
-.register-wrapper form{
+.register-wrapper form,
+.login-wrapper form
+{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -69,33 +73,41 @@
 .input-choice{
     width: 100%;
     align-items: center;
+    display: flex;
 }
 
 @media (min-width:361px){
-    .register-wrapper form{
+    .register-wrapper form,
+    .login-wrapper form
+    {
         width: 80%;
     }
 
-    .register-wrapper form div button{
+    .register-wrapper form div button,
+    .login-wrapper form div button{
         width: 60%;
     }
     
-    .register-wrapper form div button:last-child{
+    .register-wrapper form div button:last-child,
+    .login-wrapper form div button:last-child{
         width: 60%;
     }
 }
 
 @media (min-width:769px){
-    .register-wrapper form{
+    .register-wrapper form,
+    .login-wrapper form{
         width: 60%;
     }
 
-    .register-wrapper form div button{
+    .register-wrapper form div button,
+    .login-wrapper form div button{
         flex: 1;
         margin: 5px;
     }
     
-    .register-wrapper form div button:last-child{
+    .register-wrapper form div button:last-child,
+    .login-wrapper form div button:last-child{
         flex: 1;
         margin: 5px;
     }
