@@ -39,10 +39,13 @@ nav {
     background-color: var(--amarillo);
     padding: 10px;
     width: 100%;
+    position: fixed;
+    height: 18vh;
+    top: 0;
 }
 
 main {
-    margin: auto;
+    margin: 18vh auto 0;
     width: 90%;
 }
 
@@ -243,10 +246,16 @@ footer>section>article>i {
         display: block;
     }
 
-
-
     .productos>article {
         width: 49%;
+    }
+
+    nav{
+        height: 22vh;
+    }
+
+    main{
+        margin: 22vh auto 0;
     }
 
 }
@@ -287,6 +296,14 @@ footer>section>article>i {
 
     .nav-upper-container>span {
         display: block;
+    }
+
+    nav{
+        height: 18vh;
+    }
+
+    main{
+        margin: 18vh auto 0;
     }
 
 }
