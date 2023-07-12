@@ -87,6 +87,10 @@
     .login-wrapper form div button{
         width: 60%;
     }
+
+    .login-wrapper form div button:first-child:hover{
+        background: #0022AA;
+    }
     
     .register-wrapper form div button:last-child,
     .login-wrapper form div button:last-child{
