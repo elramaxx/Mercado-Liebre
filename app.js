@@ -3,6 +3,7 @@ const path = require('path');
 const app = express();
 
 const publicPath = path.join(__dirname, '/public');
+
 app.use(express.static(publicPath));
 
 process.on('SIGINT', () => console.error('Servidor Tropezado y se rompio la clavicula. En estos momentos está internado en el hospital italiano.'))

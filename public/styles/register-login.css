@@ -49,10 +49,12 @@
     padding: 7px 0px;
     width: 100%;
     border: 1px var(--celeste) solid;
-    background: linear-gradient(145deg, #135fd1, #1050b0);
+    /* background: linear-gradient(145deg, #135fd1, #1050b0); */
+    background: var(--celeste);
     border-radius: 5px;
     color: white;
     box-shadow: 3px 3px 3px #c8c8c8, -3px -3px 4px #ffffff;
+    transition: background  400ms ease;
 }
 
 .input-group button:last-child{
@@ -62,7 +64,8 @@
     border: 1px var(--celeste) solid;
     background: #ebebeb;
     border-radius: 5px;
-    color: var(--celeste);
+    color: var(--celeste);  
+    transition: background 400ms ease, color 400ms ease, border 400ms ease;
 }
 
 .input-double{
@@ -83,18 +86,22 @@
         width: 80%;
     }
 
-    .register-wrapper form div button,
-    .login-wrapper form div button{
+    .input-group button{
         width: 60%;
     }
 
-    .login-wrapper form div button:first-child:hover{
-        background: #0022AA;
+    .input-group button:first-child:hover{
+        background: var(--azul-claro);
     }
     
-    .register-wrapper form div button:last-child,
-    .login-wrapper form div button:last-child{
+    .input-group button:last-child{
         width: 60%;
+    }
+
+    .input-group button:last-child:hover{
+        background: var(--azul-claro);
+        color: white;
+        border-color: var(--azul-claro);
     }
 }
 
@@ -104,14 +111,12 @@
         width: 60%;
     }
 
-    .register-wrapper form div button,
-    .login-wrapper form div button{
+    .input-group button{
         flex: 1;
         margin: 5px;
     }
     
-    .register-wrapper form div button:last-child,
-    .login-wrapper form div button:last-child{
+    .input-group button:last-child{
         flex: 1;
         margin: 5px;
     }
