@@ -201,10 +201,6 @@ main {
     transition: all 400ms ease;
 }
 
-.productos>article>div>i:hover {
-    transform: rotate(-90deg);
-}
-
 .productos>article>p {
     font-size: 16px;
 }
@@ -249,6 +245,10 @@ footer>section {
     color: var(--azul-claro);
 }
 
+#copyright h6{
+    margin: 5px;
+}
+
 /* ------------------------------- */
 
 /* TABLET */
@@ -264,6 +264,10 @@ footer>section {
         /* display: block; */
         max-height: 500px;
         transition: all 500ms;
+    }
+
+    .productos>article:hover i {
+        transform: rotate(-90deg);
     }
 
     .productos>article {
@@ -340,5 +344,7 @@ footer>section {
         width: 100%;
         justify-content: flex-start;
     }
+
+
 
 }
