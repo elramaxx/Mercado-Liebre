@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const dotenv = require('dotenv').config();
 
 const publicPath = path.join(__dirname, '/public');
 
@@ -15,4 +16,4 @@ app.get('/register.html', (req, res) => res.sendFile(path.join(__dirname,'/views
 app.get('/login.html', (req, res) => res.sendFile(path.join(__dirname,'views/login.html')))
 
 
-const server = app.listen(3000, () => console.log('Servidor Levantado en el puerto 3000 http://localhost:3000'));
+app.listen(process.env.PORT, () => console.log(`Servidor Levantado en el puerto ${process.env.PORT} http://localhost:3000`));
