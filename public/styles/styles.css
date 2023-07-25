@@ -225,6 +225,7 @@ footer {
 footer>section {
     color: var(--gris-oscuro);
     padding: 20px 20px 1px;
+    align-items: center;
     /*SI EL ULTIMO PADDING NO ES 1PX NOS SACAN LA COPA DEL MUNDIAL*/
 }
 
